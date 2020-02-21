@@ -8,19 +8,15 @@ export const startGame = () => {
 
   //Создаем поле боя
   renderBattleField();
-
+// Добавляем EventListener
   addEventListener();      
- // Добавляем EventListener
+ 
+  //Расставляем корабли
   SHIPS_DECKS.map((decks)=>{
    createAndSetship(decks, '#computer')
    createAndSetship(decks, '#human')
    })
-  //  SHIPS_DECKS.map((decks)=>{
-  //   createAndSetship(decks, 'computer')
-  //   })
-
-
-
+  
 }
 
 

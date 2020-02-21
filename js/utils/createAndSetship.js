@@ -8,7 +8,6 @@ export const createAndSetship = (decks, id) => {
 
     if (checkShipsCoordinate(head, id)) {
         setShipbyCoordinate(head, id)
-        
 
     } else {
         createAndSetship(decks, id);
