@@ -1,0 +1,27 @@
+import { checkingShipZone } from './checkingShipZone.js'
+export const checkShipsCoordinate =
+  ({ coordinateX, coordinateY, directionX, directionY, decksShip}) => {
+
+   
+
+    let [toCoordX, fromCoordX] = checkingShipZone(coordinateX, directionX, decksShip);
+    let [toCoordY, fromCoordY] = checkingShipZone(coordinateY, directionY, decksShip);
+
+
+    for (let i = fromCoordX; i < toCoordX; i++) {
+      for (let j = fromCoordY; j < toCoordY; j++) {
+        let [{ dataset: { ship } }] = document.querySelectorAll(`#human [data--x = "${i}"][data--y = "${j}"]`)
+        if (ship != 0) {
+          return false;
+        }else{
+          return true;
+        }
+
+      }
+    }
+
+  }
+
+
+
+
