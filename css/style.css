@@ -1,21 +1,32 @@
-.container{
+.container {
     display: grid;
-    grid-template-columns: 30px 30px 30px
-     30px 30px 30px 30px 30px 30px 30px; 
-     gap: 2px;
-    
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    gap: 2px;
 
-    
 }
-.cell{
-    width: 30px;
-    height: 30px;
+
+.cell {
+    width: 50px;
+    height: 50px;
     background-color: blue;
 }
-.battleField{
+
+.battleField {
     display: flex;
     justify-content: center;
     align-items: center;
-   justify-content: space-around;
-   margin-top: 100px;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+#human .cell[data-ship='1'] {
+    background-color: red;
+}
+
+.cell[data-ship='2'] {
+    background-color: orange
+}
+
+.cell[data-ship='3'] {
+    background-color: black;
 }
