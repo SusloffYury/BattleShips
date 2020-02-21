@@ -12,11 +12,12 @@ export const startGame = () => {
   addEventListener();      
  // Добавляем EventListener
   SHIPS_DECKS.map((decks)=>{
-   createAndSetship(decks)
-   
-
-  })
-  
+   createAndSetship(decks, '#computer')
+   createAndSetship(decks, '#human')
+   })
+  //  SHIPS_DECKS.map((decks)=>{
+  //   createAndSetship(decks, 'computer')
+  //   })
 
 
 
