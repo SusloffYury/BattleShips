@@ -5,12 +5,12 @@ export let renderBattleField = () => {
   const root = document.querySelector('.root');
   const battleField = createElement('div', 'battleField');
   const humanCont = createElement('div', 'container');
-  humanCont.id = 'human'
+  humanCont.id = 'human';
   const compCont = createElement('div', 'container');
-  compCont.id = 'computer'
+  compCont.id = 'computer';
 
   renderContainer(humanCont);
-  renderContainer(compCont)
+  renderContainer(compCont);
 
   battleField.appendChild(humanCont);
   battleField.appendChild(compCont);

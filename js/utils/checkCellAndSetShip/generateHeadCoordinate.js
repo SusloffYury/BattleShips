@@ -1,4 +1,4 @@
-import { generateRandom } from '../random.js/index.js'
+import { generateRandom } from '../random.js'
 
 //Функция генерирует и возвращает координаты начало корбля и его направлние
 

@@ -1,3 +1,3 @@
-export let generateRandom =(n)=>{
- return Math.round(Math.random()*n);
+export let generateRandom = (n) => {
+    return Math.round(Math.random() * n);
 }

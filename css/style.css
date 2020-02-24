@@ -24,9 +24,11 @@
 }
 
 .cell[data-ship='2'] {
-    background-color: orange
+    background-color: orange;
+   
 }
 
 .cell[data-ship='3'] {
     background-color: black;
+   
 }
