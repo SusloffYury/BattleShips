@@ -8,12 +8,21 @@ export let renderBattleField = () => {
   humanCont.id = 'human';
   const compCont = createElement('div', 'container');
   compCont.id = 'computer';
+  const fieldSignHuman = createElement('div', 'fieldSignHuman');
 
+  fieldSignHuman.innerHTML = 'ИГРОК';
+  const fieldSignComp = createElement('div', 'fieldSignComp');
+  fieldSignComp.innerHTML = 'ПРОТИВНИК';
+  const headerSign = createElement('h1','header')
+  headerSign.innerHTML = 'МОРСКОЙ БОЙ'
   renderContainer(humanCont);
   renderContainer(compCont);
-
+  
+  humanCont.appendChild(fieldSignHuman);
+  compCont.appendChild(fieldSignComp);
   battleField.appendChild(humanCont);
   battleField.appendChild(compCont);
+ 
   root.appendChild(battleField);
 
 }
