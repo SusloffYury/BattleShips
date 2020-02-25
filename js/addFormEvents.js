@@ -17,6 +17,7 @@ export const addFormSubmitEvent = () => {
       ) {
         console.log("ВЫ ВОШЛИ УСПЕШНО");
         startGame();
+        document.getElementsByTagName("form")[0].remove();
       } else {
         console.log("ЛОГИН ИЛИ ПАРОЛЬ ВВЕДЕНЫ НЕВЕРНО");
       }
