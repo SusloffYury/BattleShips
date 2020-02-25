@@ -1,11 +1,11 @@
 import { generateHeadCoordinateDecks } from './generateHeadCoordinate.js'
 // import { checkShipsCoordinate } from './checkShipsCoordinate.js'
 import { setShipbyCoordinate } from './setShipbyCoordinate.js'
-//import {ships} from './ships.js'
+import {ships} from './ships.js'
 
 export const createAndSetship = (id) => {
-    generateHeadCoordinate()
-        .map((ship) => {
+   // generateHeadCoordinate()
+        ships.map((ship) => {
             setShipbyCoordinate(ship, id)
 
         });
