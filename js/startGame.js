@@ -9,11 +9,14 @@ export const startGame = () => {
   //Создаем поле боя
   renderBattleField();
   //Расставляем корабли
-  SHIPS_DECKS.map((decks) => {
-    createAndSetship(decks, '#computer');
-    createAndSetship(decks, '#human');
-  });
-    // Добавляем EventListener
+  let test = [3, 3]
+  // SHIPS_DECKS
+  //   .map((decks) => {
+  //     createAndSetship(decks, '#computer');
+  //     createAndSetship(decks, '#human');
+  //   });
+    createAndSetship('#human');
+  // Добавляем EventListener
   addEventListener();
 }
 
