@@ -1,5 +1,5 @@
 import { generateRandom } from '../random.js'
-
+//Обьект содержащий началные координаты кораблей и их свойства
 
 export const ships = [
     {
@@ -50,26 +50,26 @@ export const ships = [
         'directionY': 1,
         'coordinateX': generateRandom(1),
         'coordinateY': 7 + generateRandom(2),
-       },
-        {
-            'decksShip': 1,
-            'directionX': 0,
-            'directionY': 1,
-            'coordinateX': 3 + generateRandom(1),
-            'coordinateY': 8 + generateRandom(1),
-        },
-        {
-            'decksShip':  1,
-            'directionX': 1,
-            'directionY': 0,
-            'coordinateX': 6 + generateRandom(1),
-            'coordinateY': 8 + generateRandom(2),
-        },
-        {
-            'decksShip': 1,
-            'directionX': 0,
-            'directionY': 1,
-            'coordinateX': 9,
-            'coordinateY': 7 + generateRandom(2),
-        },
+    },
+    {
+        'decksShip': 1,
+        'directionX': 0,
+        'directionY': 1,
+        'coordinateX': 3 + generateRandom(1),
+        'coordinateY': 8 + generateRandom(1),
+    },
+    {
+        'decksShip': 1,
+        'directionX': 1,
+        'directionY': 0,
+        'coordinateX': 6 + generateRandom(1),
+        'coordinateY': 8 + generateRandom(2),
+    },
+    {
+        'decksShip': 1,
+        'directionX': 0,
+        'directionY': 1,
+        'coordinateX': 9,
+        'coordinateY': 7 + generateRandom(2),
+    },
 ]

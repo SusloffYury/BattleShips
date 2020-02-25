@@ -7,8 +7,7 @@ export const setShipbyCoordinate =
           let x = coordinateX + indI *directionX;
           let y = coordinateY + indI * directionY;
             document.querySelector(`${id} [data--x = "${x}"][data--y = "${y}"]`).dataset.ship = '1';
-     
-            indI++
+             indI++
         }
 
     }
